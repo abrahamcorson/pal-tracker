@@ -45,4 +45,5 @@ public class PalTrackerApplication {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         SpringApplication.run(PalTrackerApplication.class, args);
     }
+
 }
