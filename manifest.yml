@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 ---
+=======
+>>>>>>> lab 3
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
   routes:
+<<<<<<< HEAD
     - route: jb-pal-tracker-review.apps.pikes.pal.pivotal.io
   services:
   - tracker-database
   env:
     WELCOME_MESSAGE: Hello from the review environment
+=======
+    - route: amc-pal-tracker-review.apps.pikes.pal.pivotal.io
+  env:
+    WELCOME_MESSAGE: Hello from the review environment.
+>>>>>>> lab 3
