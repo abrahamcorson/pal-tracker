@@ -17,7 +17,7 @@ public class EnvControllerTest {
             "123.sesame.street"
         );
 
-        Map<String, String> env = controller.getEnv(); 
+        Map<String, String> env = controller.getEnv();
 
         assertThat(env.get("PORT")).isEqualTo("8675");
         assertThat(env.get("MEMORY_LIMIT")).isEqualTo("12G");
