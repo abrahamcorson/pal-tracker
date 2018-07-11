@@ -28,9 +28,6 @@ public class PalTrackerApplication {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
 
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        jdbcTemplate.execute("TRUNCATE time_entries");
-
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         return new JdbcTimeEntryRepository(dataSource);
     }
